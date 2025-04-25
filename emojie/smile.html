@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-color: #001f3f; /* Navy Blue base */
+        background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 50px 50px;
+        }
+        .frame{
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .cir1{
+            border: 30px solid yellow; 
+            border-radius: 100%;
+            height: 400px;
+            width: 400px; 
+            display: flex;
+            background-color: greenyellow;
+            
+            
+        }
+        .eye1{
+            position: relative;
+            border: 2px solid black;
+            height: 70px;
+            width: 50px;
+            left: 100px;
+            top: 100px;
+            border-radius: 100px;
+            background-color: white;
+            display: flex;
+            
+        }
+        .eye2{
+            position: relative;
+            border: 2px solid black;
+            height: 70px;
+            width: 50px;
+            left: 200px;
+            top: 100px;
+            border-radius: 100px;
+            background-color: white;
+            display: flex;
+            
+        }
+        .smile{
+            position: relative;
+            border: 2px solid black;
+            height: 30px;
+            width: 100px;
+            
+            top: 310px;
+            border-radius: 75px 75px 0 0;
+            background-color:blanchedalmond;
+            display: flex;
+
+        }
+        .toung{position: relative;
+            border: 2px solid black;
+            height: 70px;
+            width: 50px;
+            left: 25px;
+            top: 0px;
+            border-radius: 0 0 75px 75px;
+            background-color: red;
+            display: flex
+
+        }
+        .drop1{
+            position: relative;
+            border: 2px solid black;
+            
+            left: -20px;
+            top: 180px;
+            transform: translateX(-50%);
+            height: 40px;
+            width: 20px;
+            border-radius: 100px 0px 90px 100px;
+            background-color: blue;
+            display: flex;
+            animation: drip 2.5s ease-in infinite;
+            box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+
+        }
+        .drop2{
+            position: relative;
+            border: 2px solid black;
+            height: 40px;
+            width: 20px;
+            left:190px;
+            top: 180px;
+            border-radius: 0px 100px 90px 100px;
+            background-color: blue;
+            display: flex;
+            animation: drip 2.5s ease-in infinite;
+            box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+
+        }
+        .ci1{
+            position: relative;
+            border: 2px solid black;
+            height: 35px;
+            width: 50px;
+            top: 32px;
+            border-radius: 100%;
+            background-color: blue;
+            display: flex;
+            
+        }
+        .ci2{
+            position: relative;
+            border: 2px solid black;
+            height: 35px;
+            width: 50px;
+            top: 32px;
+            border-radius: 100%;
+            background-color: blue;
+            display: flex;
+            
+        }
+        button{
+          position: relative;
+          left: 100px;
+          top: 50px;
+          border-radius: 100%;
+          border: 4px solid green;
+          background-color: rgb(86, 252, 4);
+          height: 60px;
+          width: 100px;
+
+        }
+        @keyframes drip {
+      0% {
+        top: 160px;
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        top: 300px;
+        opacity: 0;
+        transform: translateX(-50%) scale(0.7);
+      }
+    }
+     
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1><center><u><i><b>Working on button into circle.</b></i></u></center></h1>
+    <div class="frame" ">
+        <div class="cir1">
+        <div class="eye1" ><div class="ci1"></div></div>
+        <div class="eye2"><div class="ci2"></div></div>
+        <div class="drop1"></div>
+        <div class="drop2"></div>
+
+        <div class="smile">
+        <div class="toung"></div> </div></div></div>
+        <button onclick="togglePages()">EMOJI</button>
+
+        <script>
+          let toggle = false;
+      
+          function togglePages() {
+            if (toggle) {
+              window.location.href='ff.html';
+            } else {
+              window.location.href='test.html';
+            }
+            toggle = !toggle;
+          }
+        </script>
+    
+    
+</body>
+</html>
